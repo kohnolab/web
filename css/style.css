@@ -47,15 +47,17 @@ div#container	{
 /* for IE7,8 */
 head~/* */body div#pagetitle,
 head~/* */body address	{ font-family: "ＭＳ 明朝", serif;}
-/* for IE9 */
-:root div#pagetitle,
-:root address	{font-family: "ＭＳ 明朝", serif \0/;}
 
 /* for other UA */
 html:not(:target) div#pagetitle,
 html:not(:target) address	{
 	font-family: "Times New Roman", Times, serif;
 }
+
+/* for IE9 */
+:root div#pagetitle,
+:root address	{font-family: "ＭＳ 明朝", serif \0/;}
+
 
 .English_version,
 .English_version *	{
