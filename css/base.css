@@ -1,0 +1,474 @@
+@charset "UTF-8";
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body	{
+	font: normal normal normal 100%/1.5em "MＳ Ｐゴシック",sans-serif;
+	text-align: center;
+	min-width: 715px;
+}
+
+body *	{
+	text-align: left;
+}
+
+body,div,p,pre,
+h1,h2,h3,h4,h5,h6,
+dl,dt,dd,
+ul,ol,li,
+address	{
+	padding: 0;
+	margin: 0;
+}
+
+ul,ol	{
+	margin: 20px 10px;
+}
+
+li {
+	margin-left: 20px;
+	padding-left: 5px;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol	{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+ul li	{list-style-type: circle;}
+
+ul li ul li {list-style-type: disc;}
+
+ul li ul li ul li {list-style-type: square;}
+
+ol li	{list-style-type: decimal;}
+
+ol li ol li	{list-style-type: lower-alpha;}
+
+ol li ol li ol li	{list-style-type: lower-roman;}
+
+
+dl	{
+	margin: 20px 10px;
+}
+
+dd	{margin: 5px 10px 15px;}
+
+dd ul,
+dd ol	{margin: 0;}
+
+em,cite,address {font-style: normal;}
+
+img {border: 0;}
+
+a	{
+	text-decoration: underline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*	fieldset,
+	legend	{border: 1px dotted #999999;}
+
+	legend	{
+		font-variant: small-caps;
+
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+*/
+
+legend	{ display: none;}
+fieldset	{ border: none;}
+
+code	{
+	font-family: "Courier New", monospace;
+	margin: 0 1px;
+}
+
+pre code	{
+	display: block;
+	overflow: auto;
+	margin: 20px 40px;
+	padding: 10px;
+	border: 4px double #999999;
+}
+
+em	{
+	font-weight: bold;
+	font-size: 105%;
+	margin: 2px 5px;
+}
+
+strong	{
+	font-weight: normal;
+	text-decoration: underline;
+	margin: auto 3px;
+}
+
+cite:before {content: "引用: ";}
+
+blockquote	{
+	background: url("/img/quote.gif") no-repeat bottom right;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	padding-bottom: 40px;
+}
+
+blockquote p	{
+	margin: 15px 0;
+}
+
+blockquote cite	{
+	width: 98% !important;
+	margin: 5px 0;
+	padding: 3px 3px 1px 5px;
+}
+
+address {font-size: 90%;}
+
+
+
+ruby {
+	display: inline-table;
+}
+
+ruby * {
+	display: inline;
+	line-height: 50%; /**/
+	margin: 0px;
+	padding: 0px;
+	/*position: static;*/
+	text-indent: 0px;
+	text-align: center;
+	white-space: nowrap;
+
+
+}
+
+ruby > * {
+	display: table-row-group;
+}
+
+
+ruby > rt, ruby rtc {
+	display: table-header-group;
+	display: table-caption;
+	font-family: "Meiryo", "MS UI Gothic", sans-serif;
+	font-size: 75%;
+	line-height: 175%;
+}
+
+rb {
+	display: table-cell;
+	padding-left: 0.5em;
+	letter-spacing: 0.5em;
+}
+
+ruby rtc + rtc {
+	display: table-footer-group;
+}
+
+ruby rbc > *,
+ruby rtc > * {
+	display: table-cell;
+}
+
+ruby rp { display: none;}
+
+*|*:link ruby rt,
+*|*:visited ruby rt,
+*|*:link ruby rtc,
+*|*:visited ruby rtc {
+	text-decoration: none;
+}
+
+.English	{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.under_construction	{
+	background: url("../img/under_construction.jpg") no-repeat right bottom;
+	font-size: 150%;
+	text-align: center;
+	margin: 100px 0 50px;
+	padding-bottom: 80px;
+	border-right: 10px solid #cccccc;
+}
+
+.subtitle	{
+	font-size: 75%;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+.spacer	{
+	height: 60px;
+	border: none;
+}
+
+.missing	{
+	color: red;
+	font-weight: bold;
+}
+
+.unimportant	{
+	display: none;
+}
+
+.for_no_css {
+	clear: both;
+	display: none;
+}
+
+.note	{
+	font-size: 80%;
+	color: #666666;
+}
+
+.notice	{
+	font-size: 90%;
+	vertical-align: top;
+}
+
+.label	{
+	display: none;
+	font-size: 88%;
+	font-weight: normal;
+	margin-right: 5px;
+}
+
+.note:before,
+.notice:before	{ content:" ("}
+.note:after,
+.notice:after	{ content:") "}
+
+.eg	{
+	display: block;
+	font-size: smaller;
+}
+
+.eg:before	{content: "<";}
+.eg:after	{content: ">";}
+
+a.to_pdf	{
+	background: url("../img/pdf.png") no-repeat center right;
+	padding-right: 20px; !important
+}
+
+a.to_TeXfile	{
+	background: url("../img/TeX.png") no-repeat center right;
+	padding-right: 20px; !important
+}
+
+.external_link	{
+	background: url(../img/external.png) no-repeat center right;
+	padding-right: 20px !important;
+}
+
+.reference a	{
+	text-decoration: none;
+	margin:0;
+}
+
+em.accesskey {
+	color: green;
+	font-family: "Courier New", monospace;
+	background: #eeeeee;
+	padding: 0px 2px;
+	border: solid #cccccc 1px;
+	font-size: 80%;
+}
+
+em.alphabet	{
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+.date,
+#published,
+#modified {
+	font-family: Georgia, Verdana, Chicago, sans-serif;
+}
+
+#published,
+#modified {
+	font-size: 105%;
+}
+
+.to_page_top	{
+	margin-top: 10px;
+}
+
+.prev,
+.next	{
+	font-size: 80%;
+}
+
+#footMenu .prev,
+#footMenu .next	{
+	display: block;
+	font-size: 120%;
+}
+
+#footMenu .prev	{float: left;}
+#footMenu .next	{float: right;}
+
+#contact {
+	font-size: 90%;
+	text-align: center;
+	line-height: 100%;
+	margin-top: 20px;
+}
+
+.id_number {
+	font-family: Georgia, Verdana, Chicago, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.tags	{
+	font-size: 50%;
+	font-weight: normal;
+	vertical-align: super;
+	margin-left: 5px;
+	padding: 5px;
+	border: 1px solid #999999;
+}
+
+.body p	{
+	text-indent: 1em;
+	line-height: 2em;
+	text-align: justify;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.body pre {
+	text-align: justify;
+	margin: 20px auto 20px 20px;
+}
+
+.navigator	{
+	text-align: right;
+	margin-right: 50px;
+}
+
+.navigator li {
+	display: inline;
+	font-size: 95%;
+	list-style-type: none;
+}
+
+.navigator li a {
+	text-decoration: none;
+}
+
+#site_address {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 120%;
+}
+
+#site_address,
+#site_address a {text-decoration: none;}
+
+
+
+div.image	{
+	text-align: center;
+	overflow: auto;
+
+	padding: 10px 10px 0;
+}
+
+
+div.image p	{
+	font-size: 90%;
+	text-align: center!important;
+	margin: 0!important;
+}
+
+.for_text	{
+	line-height: 2.0em;
+	text-indent: 1.0em;
+}
+
+.for_text p	{
+	text-align: justify;
+	margin: 20px auto;
+}
+
+.for_text p br	{ display: none;}
+
+.for_text li	{padding-left:0;}
+
+.aphorism p	{
+	text-align: center;
+
+	margin: 40px 20px;
+}
+
+.line_img	{
+	vertical-align: text-bottom;
+}
+
+dl.fontsmaller dd,
+ul.fontsmaller li	{
+	font-size: 90%;
+	margin-bottom: 5px;
+}
+
+dl.fontsmaller dd sup,
+ul.fontsmaller li sup	{
+	font-size: 10%;
+}
+
+.myname	{
+	text-decoration: underline;
+}
+
+.volume	{
+	font-weight: bold;
+}
+
+/*	FORM DESIGN START	*/
+
+.broad {width: 85%;}
+
+.submit	{text-align: right;}
+.cancel {text-align: left; }
+
+#Post textarea	{
+	overflow-y: scroll;
+	font-size: 75%;
+	font-family: monospace, Verdana, Osaka, sans-serif;
+	padding: 0.5em;
+}
+
+/*	FORM DESIGN END		*/
+
+.clearfix:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+} /*IE7以外のモダンブラウザ向け*/
+
+.clearfix{display:inline-block;} /*IE7およびMacIE5向け*/
+
+/*Hides from IE-mac\*/
+* html .clearfix{height:1%;}
+.clearfix{display:block;}
+/*End hide from IE-mac*/ /*IE6以前向け*/
+
+iframe {
+border-width: 0;
+}

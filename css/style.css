@@ -1,0 +1,479 @@
+@charset "UTF-8";
+@namespace url(http://www.w3.org/1999/xhtml);
+
+body	{
+}
+
+h2	{
+	font-family: "Times New Roman", Times, serif;
+	margin: 10px auto 5px;
+	padding: 10px;
+}
+
+h3	{
+	margin: 10px 20px;
+}
+
+table	{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th	{
+	background-color: #cccccc;
+	color: #333333;
+	font-weight: normal;
+}
+
+td,th	{
+	text-align: center;
+	border: 1px solid #999999;
+}
+
+
+div#container	{
+	width: 900px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/*-------------------------------------------------------------------------*/
+/* for lt IE6 */
+* html div#pagetitle,
+* html address	{ font-family: "ＭＳ 明朝", serif;}
+
+/* for IE7,8 */
+head~/* */body div#pagetitle,
+head~/* */body address	{ font-family: "ＭＳ 明朝", serif;}
+
+/* for other UA */
+html:not(:target) div#pagetitle,
+html:not(:target) address	{
+	font-family: "Times New Roman", Times, serif;
+}
+.English_version,
+.English_version *	{
+	font-family: "Times New Roman", Times, serif;
+}
+/*-------------------------------------------------------------------------*/
+
+div#pagetitle	{
+	height: 65px;
+}
+
+div#pagetitle p	{
+	margin-top: 8px;
+}
+
+div#pagetitle a	{
+	color: #000000;
+	text-decoration: none;
+	margin: 0;
+}
+
+.global	{
+	font-size: 90%;
+	padding-right: 25px;
+	margin: 0;
+}
+
+.global *	{
+	margin: 0;!important
+	padding: 0;!important
+}
+
+#to_Japanese_page,
+#to_English_page	{
+	font-variant: small-caps;
+}
+
+#to_Japanese_page a,
+#to_English_page a	{
+	background-color: #000099;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 2px 6px;
+	border: 1px dotted #0000ff;
+}
+
+#to_Japanese_page a:hover,
+#to_English_page a:hover	{
+	background-color: #ffffff;
+	color: #000099;
+	border: 1px dotted #0000ff;
+}
+
+
+ul#menu	{
+	margin-top: 1px;
+	margin-bottom: 5px;
+	padding: 3px 0;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+ul#menu li	{
+	display: inline;
+	margin: 0 0 0 2px;
+	padding: 0 3px;
+}
+
+ul#menu li a#current {
+	color: #000000;
+	text-decoration: none;
+}
+
+div#location_bar,
+div#bottom_location_bar	{
+	font-size: 90%;
+}
+
+div#location_bar	{
+	padding: 5px 15px;
+}
+
+div#bottom_location_bar	{
+	padding: 5px 15px;
+	border-top: 1px solid #cccccc;
+}
+
+p#page_info	{
+	font-size: 90%;
+	text-align: right;
+}
+
+
+div#content	{
+	margin: 20px 50px
+}
+
+#ToC	{
+	font-size: 90%;
+	width: 350px;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 5px 10px 30px;
+	border: 1px solid #cccccc;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+}
+
+#ToC p	{
+	text-align: center;
+	margin-top: 15px;
+}
+
+table.career	{
+	margin-left: 0;
+}
+
+table.career td	{
+	text-align: left;
+	padding: 7px 5px;
+	border: 0;
+}
+
+table.career td.time	{
+	width: 120px;
+}
+
+table.education td.time	{
+	text-align: right;
+	width: 165px!important;
+}
+
+dl#memo dt	{
+	padding-top: 40px;
+}
+
+dl#memo dd table td	{
+	padding: 2px 5px;
+}
+
+p#mention	{
+	text-align: center;
+	margin: 45px auto 25px;
+	padding: 10px;
+	border: 3px double #999999;
+}
+
+/*-------------------------------------------------------------------------*/
+/* 	member		*/
+/*-------------------------------------------------------------------------*/
+
+dl#member	{
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+dl#member dt	{
+	color: #333333;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	border-bottom: 3px double #cccccc;
+}
+
+dl#member dd	{
+	margin-left: 50px;
+}
+
+em.name	{
+	font-size: 110%;
+	font-weight: normal;
+}
+
+table.members_data	{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.members_data th	{
+	background: none;
+	font-weight: normal;
+	text-align: center;
+	border: 0;
+}
+
+table.members_data td	{
+	text-align: left;
+	border: 0;
+}
+
+
+#past_member	{text-align: right;}
+
+
+/*-------------------------------------------------------------------------*/
+/* 	paper_etc		*/
+/*-------------------------------------------------------------------------*/
+
+div#paper dl	{
+	margin: 20px 0;
+}
+
+div#paper dl dt	{
+	width: 5em;
+	text-align: center;
+	padding: 5px;
+	margin: 20px 0 10px;
+	border: 3px double #999999;
+}
+
+div#paper dl dd span.subject	{
+	background: url("../img/paper.png") no-repeat left center;
+	padding: 10px 0 10px 40px;
+}
+
+span.journals em	{
+	font-size: 95.2%;
+	margin: 0;
+}
+
+div#paper dl dd span a:hover	{
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------*/
+/* 	seminar		*/
+/*-------------------------------------------------------------------------*/
+
+h3 span.subject	{
+	margin-left: 20px;
+}
+
+h3 span.presenter {
+	font-size: 90%;
+	padding-left: 10px;
+}
+
+dl#seminar_log	{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+dl#seminar_log dt	{
+	padding-left: 10px;
+}
+
+dl#seminar_log dd	{
+	margin-left: 50px;
+	margin-bottom: 0;
+}
+
+#M1 ul,
+#B4 ul	{
+	margin: 20px 5px;
+}
+
+div#B4 ul li	{
+	margin-bottom: 10px;
+}
+
+div#B4 ul li ol	{
+	margin-top: 10px;
+	margin-left: 25px; 
+}
+
+div#B4 ul li ol li	{
+	margin-bottom: 2px;
+}
+
+/*-------------------------------------------------------------------------*/
+/* 	event		*/
+/*-------------------------------------------------------------------------*/
+
+#annual_event_list table	{
+	width: 500px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#annual_event_list table td ul	{
+	margin: 0;
+}
+
+#per_year	{
+	margin-top: 50px;
+}
+
+#per_year dl	{
+	margin: 20px 40px 50px;
+}
+
+#per_year dl dt	{
+	padding-left: 10px;
+}
+
+#per_year dl dd	{
+	margin-left: 60px;
+}
+
+/*-------------------------------------------------------------------------*/
+/* 	access		*/
+/*-------------------------------------------------------------------------*/
+
+dl#access	{
+	margin: 0;
+}
+
+dl#access dd	{
+	margin-bottom: 60px;
+}
+
+dl#access dd table	{
+	margin-top: 20px;
+}
+
+dl#access dd dl	{
+	margin-top: 40px;
+}
+
+dl#access dd dl dt	{
+	background: url("../img/dt.png") no-repeat right center;
+	margin-top: 30px;
+	padding: 5px 5px 5px 15px;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+}
+
+dl#access dd dl dd	{
+	margin: 20px 25px;
+}
+
+dl#access dd dl dd p	{
+	margin-top: 10px;
+}
+
+.box	{
+	text-align: center;
+	font-size: 90%;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box a	{
+	display: block;
+	text-align: center;
+}
+
+/*-------------------------------------------------------------------------*/
+/* 	myklogo		*/
+/*-------------------------------------------------------------------------*/
+
+#myklogo	{
+	margin-top: 100px;
+}
+
+#myklogo p	{
+	text-align: center;
+}
+
+/*-------------------------------------------------------------------------*/
+
+#miyake_group_logo	{
+	float: right;
+
+	width: 100px;
+	margin-top: 3px;
+}
+
+#miyake_group_logo a	{margin:0;}
+
+.en	{
+	margin-top: 25px!important;
+}
+
+address	{
+	text-align: center;
+	background: #000000;
+	color: #ffffff;
+	height: 100px;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+
+address a {
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+}
+
+address a:hover {
+	text-decoration: underline;
+}
+
+dl dt	{
+	color: #333333;
+	border-bottom: 3px double #cccccc;
+}
+
+dl dd dl dt	{
+	margin-top: 30px;
+	padding-left: 5px;
+}
+
+span.subject	{
+	display: block;
+}
+
+#modified_list dt {
+	margin-left: 40px;
+	margin-top: 10px;
+	border-bottom: none;
+}
+
+#modified_list dd {
+	margin: -1px 0 0 50px!important;
+	padding-left: 5px;
+	border-left: 6px double #999999;
+	border-right: 6px double #999999;
+}
