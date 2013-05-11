@@ -355,6 +355,7 @@ em.alphabet	{
 }
 
 .navigator	{
+	clear: both;
 	text-align: right;
 	margin-right: 50px;
 }
