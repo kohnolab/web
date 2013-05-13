@@ -2,8 +2,13 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 body	{
-	font-family: "helvetica,sans-serif", 'メイリオ','ＭＳ Ｐゴシック',Verdana, Arial,sans-serif;
+	font-family: "Times New Roman", Times, serif;
+	font-family: 'メイリオ','ＭＳ Ｐゴシック',Verdana, Arial,sans-serif\9;	/* for ie8 and below */
 	border-top: 10px solid #000000;
+}
+
+body:not(:target) {
+	font-family: 'メイリオ','ＭＳ Ｐゴシック',Verdana, Arial,sans-serif\9;	/* IE9 */
 }
 
 h2	{
@@ -58,11 +63,8 @@ div#pagetitle	{
 
 div#pagetitle p	{
 	margin-top: 8px;
-}
-
-body.lt-ie9 div#pagetitle p, 
-body.no-js div#pagetitle p	{
-	margin-top: 13px;
+	*margin-top: 13px;
+	margin-top: 13px\9;
 }
 
 div#pagetitle a	{
@@ -227,6 +229,8 @@ em.name	{
 
 span.email	{
 	font-size: 130%;
+	font-size: 100%\9;	/* for ie8 and below */
+
 	font-family: monospace;
 
 	display: block;
@@ -237,9 +241,8 @@ span.email	{
 	margin-right: 15px;
 }
 
-body.no-js span.email,
-body.lt-ie9 span.email	{
-	font-size: 100%;
+span.email:not(:target) {
+	font-size: 100%\9; /* IE9 */
 }
 
 table.members_data	{
