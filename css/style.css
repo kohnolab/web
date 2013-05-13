@@ -2,6 +2,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 body	{
+	font-family: "helvetica,sans-serif", 'メイリオ','ＭＳ Ｐゴシック',Verdana, Arial,sans-serif;
 	border-top: 10px solid #000000;
 }
 
@@ -44,19 +45,6 @@ div#container	{
 }
 
 /*-------------------------------------------------------------------------*/
-div#pagetitle,
-h2,
-address	{
-	font-family: "Times New Roman", Times, serif;
-}
-
-/* for IE6, 7, 8 */
-body.lt-ie9, body.no-js,
-body.lt-ie9 div#pagetitle, body.no-js div#pagetitle,
-body.lt-ie9 h2, body.no-js h2,
-body.no-js address, body.lt-ie9 address	{
-	font-family: 'メイリオ','ＭＳ Ｐゴシック',Verdana, Arial,sans-serif;
-}
 
 .English_version,
 .English_version *	{
