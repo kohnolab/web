@@ -319,6 +319,7 @@ dl#former_information * {
 
 dl#seminar_information {
 	width: 750px;
+	margin-bottom: 50px;
     border-top: 0;
     border-bottom: 1px solid;
     border-left: 1px solid;
@@ -346,6 +347,10 @@ dl#seminar_information dd {
     border-top: 1px solid;
     border-left: 1px solid;
     background:#fff;
+}
+
+div#googleCalender	{
+	margin-bottom: 40px;
 }
 
 dl#former_information {
