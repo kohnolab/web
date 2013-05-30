@@ -350,6 +350,7 @@ dl#former_information {
 
 dl#former_information dt,
 dl#former_information dd.date span.time,
+dl#former_information dd.date span.weekday,
 dl#former_information dd.place,
 dl#former_information dd.abstract {
 	display: none;
