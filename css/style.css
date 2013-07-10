@@ -340,6 +340,10 @@ dl#seminar_information dd {
     background:#fff;
 }
 
+dl#seminar_information dd.abstract p {
+	margin: 0 15px;
+}
+
 div#googleCalender	{
 	margin-bottom: 40px;
 }
@@ -351,8 +355,7 @@ dl#former_information {
 dl#former_information dt,
 dl#former_information dd.date span.time,
 dl#former_information dd.date span.weekday,
-dl#former_information dd.place,
-dl#former_information dd.abstract {
+dl#former_information dd.place	{
 	display: none;
 }
 
@@ -385,6 +388,14 @@ dl#former_information dd.title {
     width: 500px;
     padding: 5px;
     border-top: 1px solid;
+}
+
+dl#former_information dd.abstract	{
+    float: right;
+    font-size: 90%;
+    width: 500px;
+    padding: 5px;
+    border-top: 1px dotted;
 }
 
 
